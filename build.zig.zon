@@ -1,10 +1,18 @@
 .{
     .name = "malbogle-zig",
     .version = "1.0.0",
+    .minimum_zig_version = "0.13.0",
+    .dependencies = .{
+        .clap = .{
+            .url = "https://github.com/Hejsil/zig-clap/archive/0.9.1.tar.gz",
+            .hash = "122062d301a203d003547b414237229b09a7980095061697349f8bef41be9c30266b",
+        },
+    },
     .paths = .{
         "build.zig",
         "build.zig.zon",
         "src",
+        "examples",
         "LICENSE",
         "README.md",
     },
